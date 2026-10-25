@@ -22,7 +22,7 @@ Windows clicks Connect
         ↓
 Phone receives a connection request → Accept
         ↓
-Phone goes in pocket, screen off
+Phone goes in pocket, screen on
         ↓
 Volume UP   →  Next slide
 Volume DOWN →  Previous slide
