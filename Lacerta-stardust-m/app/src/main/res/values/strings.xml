@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Lacerta Stardust</string>
+    <string name="accessibility_description">
+        Intercepts volume button presses to control presentation slides
+        when connected to a Windows PC via Bluetooth.
+    </string>
+</resources>
