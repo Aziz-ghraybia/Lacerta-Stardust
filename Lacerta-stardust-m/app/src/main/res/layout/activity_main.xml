@@ -4,63 +4,62 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center"
-    android:padding="32dp"
-    android:background="#0a0d1f">
+    android:background="#0a0d1f"
+    android:padding="28dp">
 
-    <!-- Stars header -->
+    <!-- App name -->
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="✦  ★  ✦"
-        android:textSize="14sp"
-        android:textColor="#f0b429"
-        android:letterSpacing="0.2"
-        android:layout_marginBottom="8dp" />
-
-    <!-- App title -->
-    <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="LACERTA STARDUST"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        android:textColor="#e8f0ff"
-        android:letterSpacing="0.2"
-        android:layout_marginBottom="40dp" />
+        android:textColor="#6a8fff"
+        android:textSize="11sp"
+        android:letterSpacing="0.25"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="48dp" />
 
-    <!-- Connection status -->
+    <!-- Status -->
     <TextView
         android:id="@+id/tvStatus"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="✦  AWAITING ALIGNMENT"
-        android:textSize="13sp"
-        android:textStyle="bold"
+        android:text="AWAITING ALIGNMENT"
         android:textColor="#3a4a6a"
-        android:letterSpacing="0.15"
-        android:layout_marginBottom="8dp" />
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:letterSpacing="0.08"
+        android:gravity="center"
+        android:layout_marginBottom="12dp" />
 
     <!-- Connected device name -->
     <TextView
         android:id="@+id/tvDeviceName"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="14sp"
-        android:textColor="#6a8fff"
+        android:textColor="#e8f0ff"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:gravity="center"
         android:visibility="gone"
-        android:layout_marginBottom="12dp" />
+        android:layout_marginBottom="16dp" />
 
     <!-- Hint text -->
     <TextView
         android:id="@+id/tvHint"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="13sp"
         android:textColor="#3a4a6a"
+        android:textSize="14sp"
         android:gravity="center"
         android:lineSpacingExtra="4dp"
         android:layout_marginBottom="40dp" />
+
+    <!-- Spacer -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
 
     <!-- Bluetooth warning -->
     <LinearLayout
@@ -68,29 +67,37 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:background="#0d0a1a"
+        android:background="#5c1010"
         android:padding="14dp"
         android:gravity="center_vertical"
         android:visibility="gone"
-        android:layout_marginBottom="12dp">
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_disconnect"
+            android:layout_marginEnd="12dp"
+            android:tint="#e05252" />
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="⚡  Bluetooth is off — turn it on to connect"
-            android:textColor="#e05252"
-            android:textSize="13sp" />
+            android:text="Bluetooth is off"
+            android:textColor="#e8f0ff"
+            android:textSize="14sp" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Settings"
-            android:backgroundTint="#00000000"
-            android:textColor="#e05252"
-            android:textSize="11sp"
+            android:textColor="#e8f0ff"
+            android:textSize="12sp"
+            android:backgroundTint="#7a1a1a"
             android:onClick="openBluetoothSettings"
-            style="@style/Widget.MaterialComponents.Button.TextButton"/>
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp" />
 
     </LinearLayout>
 
@@ -99,37 +106,37 @@
         android:id="@+id/layoutAccessibilityWarning"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="#120d00"
-        android:padding="16dp"
+        android:orientation="horizontal"
+        android:background="#1e1800"
+        android:padding="14dp"
+        android:gravity="center_vertical"
         android:visibility="gone">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="⚠  ACCESSIBILITY REQUIRED"
-            android:textStyle="bold"
-            android:textColor="#f0b429"
-            android:letterSpacing="0.1"
-            android:textSize="11sp"
-            android:layout_marginBottom="6dp" />
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_notification"
+            android:layout_marginEnd="12dp"
+            android:tint="#f0b429" />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Without it the volume buttons won't control your slides."
-            android:textColor="#c48a00"
-            android:textSize="13sp"
-            android:layout_marginBottom="12dp" />
+            android:layout_weight="1"
+            android:text="Accessibility permission required"
+            android:textColor="#e8f0ff"
+            android:textSize="14sp" />
 
         <Button
             android:id="@+id/btnEnableAccessibility"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Enable Accessibility"
-            android:backgroundTint="#f0b429"
+            android:text="Enable"
             android:textColor="#0a0d1f"
-            android:textStyle="bold" />
+            android:textSize="12sp"
+            android:backgroundTint="#f0b429"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp" />
 
     </LinearLayout>
 

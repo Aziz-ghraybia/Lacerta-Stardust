@@ -158,17 +158,17 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setConnectedState(deviceName: String) {
-        binding.tvStatus.text = "★  STARS ALIGNED  ★"
+        binding.tvStatus.text = "STARS ALIGNED"
         binding.tvStatus.setTextColor(android.graphics.Color.parseColor("#f0b429"))
         binding.tvDeviceName.text = deviceName
         binding.tvDeviceName.visibility = View.VISIBLE
         binding.tvHint.text =
-            "Volume buttons are controlling your slides.\nPull down the notification to disconnect."
-        binding.tvHint.setTextColor(android.graphics.Color.parseColor("#6a8fff"))
+            "Press physical volume keys on your phone to\nnavigate presentation slides"
+        binding.tvHint.setTextColor(android.graphics.Color.parseColor("#3a4a6a"))
     }
 
     private fun setDisconnectedState() {
-        binding.tvStatus.text = "✦  AWAITING ALIGNMENT"
+        binding.tvStatus.text = "AWAITING ALIGNMENT"
         binding.tvStatus.setTextColor(android.graphics.Color.parseColor("#3a4a6a"))
         binding.tvDeviceName.visibility = View.GONE
         binding.tvHint.text =

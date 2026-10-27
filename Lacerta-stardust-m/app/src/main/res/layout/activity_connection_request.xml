@@ -1,132 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:minWidth="300dp"
-    android:padding="32dp"
-    android:gravity="center"
-    android:background="#0a0d1f">
+    android:layout_height="match_parent"
+    android:background="#99000000">
 
-    <!-- Star alignment animation hint — 3 stars converging -->
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:layout_marginBottom="24dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="✦"
-            android:textSize="14sp"
-            android:textColor="#f0b429"
-            android:alpha="0.5"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="  ✦  "
-            android:textSize="22sp"
-            android:textColor="#f0b429"
-            android:alpha="0.8"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="★"
-            android:textSize="32sp"
-            android:textColor="#ffe8a0"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="  ✦  "
-            android:textSize="22sp"
-            android:textColor="#f0b429"
-            android:alpha="0.8"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="✦"
-            android:textSize="14sp"
-            android:textColor="#f0b429"
-            android:alpha="0.5"/>
-
-    </LinearLayout>
-
-    <!-- Title -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="NEW STAR ALIGNED"
-        android:textSize="11sp"
-        android:textColor="#f0b429"
-        android:letterSpacing="0.2"
-        android:textAllCaps="true"
-        android:layout_marginBottom="12dp"/>
-
-    <!-- Device name -->
-    <TextView
-        android:id="@+id/tvDeviceName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:textColor="#e8f0ff"
-        android:gravity="center"
-        android:layout_marginBottom="8dp"/>
-
-    <!-- Subtitle -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="wants to connect to your constellation"
-        android:textSize="13sp"
-        android:textColor="#6a8fff"
-        android:gravity="center"
-        android:layout_marginBottom="32dp"/>
-
-    <!-- Divider -->
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="#1a2040"
-        android:layout_marginBottom="24dp"/>
-
-    <!-- Buttons -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center">
+        android:layout_gravity="center"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:orientation="vertical"
+        android:background="#111428"
+        android:padding="24dp">
 
-        <Button
-            android:id="@+id/btnDecline"
-            android:layout_width="0dp"
+        <!-- NEW STAR ALIGNED label -->
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Decline"
-            android:layout_marginEnd="8dp"
-            android:backgroundTint="#131929"
+            android:text="NEW STAR ALIGNED"
+            android:textColor="#f0b429"
+            android:textSize="10sp"
+            android:letterSpacing="0.2"
+            android:textAllCaps="true"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Device name -->
+        <TextView
+            android:id="@+id/tvDeviceName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#e8f0ff"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Subtitle -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="wants to connect to your constellation"
             android:textColor="#6a8fff"
-            android:strokeColor="#1a2040"
-            style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+            android:textSize="14sp"
+            android:layout_marginBottom="20dp" />
 
-        <Button
-            android:id="@+id/btnAccept"
-            android:layout_width="0dp"
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#1a2040"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Connect"
-            android:layout_marginStart="8dp"
-            android:backgroundTint="#f0b429"
-            android:textColor="#0a0d1f"
-            android:textStyle="bold"/>
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnDecline"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Decline"
+                android:textColor="#e8f0ff"
+                android:layout_marginEnd="10dp"
+                android:backgroundTint="#00000000"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+            <Button
+                android:id="@+id/btnAccept"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Connect"
+                android:textColor="#0a0d1f"
+                android:textStyle="bold"
+                android:backgroundTint="#f0b429" />
+
+        </LinearLayout>
 
     </LinearLayout>
 
-</LinearLayout>
+</FrameLayout>
