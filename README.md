@@ -10,8 +10,8 @@ No extra hardware. No looking at your screen. Just press volume up or down and y
 
 | Platform | Download | Requirements |
 |----------|----------|--------------|
-| Android | [LacertaStardust.apk](https://github.com/Aziz-ghraybia/Lacerta-Stardust/releases/download/v1.0.0/LacertaStardust.apk) | Android 8.0+ |
-| Windows | [LacertaStardust.exe](https://github.com/Aziz-ghraybia/Lacerta-Stardust/releases/download/v1.0.0/LacertaStardust.exe) | Windows 10+, Bluetooth |
+| Android | [Lacerta-Stardust.apk](https://github.com/Aziz-ghraybia/Lacerta-Stardust/releases/download/v1.1.0/Lacerta-Stardust.apk) | Android 8.0+ |
+| Windows | [LacertaStardust.exe](https://github.com/Aziz-ghraybia/Lacerta-Stardust/releases/download/v1.1.0/LacertaStardust.exe) | Windows 10+, Bluetooth |
 
 ---
 
